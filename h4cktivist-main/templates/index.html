@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/eb1205b787.js" crossorigin="anonymous"></script>
+  <title>SSKM Portfolio</title>
+  <style>
+    .typewriter {
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange;
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      margin: 0 auto;
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em;
+      /* Adjust as needed */
+      animation:
+        typing 3.5s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      25% {
+        border-color: rgb(251, 251, 255);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#skills">My Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact Me</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id='about'>
+    <br><br><br>
+
+    <img
+      src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=20&m=1179420343&s=612x612&w=0&h=G2UGMVSzAXGAQs3pFZpvWlHNRAzwPIWIVtSOxZHsEuc="
+      class="rounded mx-auto d-block" alt="Avatar" height="350" width="500">
+    <br>
+    <h1 align="center" class="typewriter">Portfolio With Flask</h1>
+    <h3 align="center">Hi, my name is Saurabh Mahajan. I'm Software Enginner.</h3>
+    <h4 align="center">I think it is possible for
+      ORDINARY
+      people to choose to be
+      EXTRAORDINARY.</h4>
+    <p align="center">(~By Elon Musk)</p>
+    <hr />
+    <hr />
+
+    <div class="bg-info" id="skills">
+      <h4 align="center" class="mt-50">My Skills:</h4>
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          HTML
+          <span class="badge bg-success">Good</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          CSS
+          <span class="badge bg-success">Good</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Python
+          <span class="badge bg-success">Good</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Java
+          <span class="badge bg-warning">Intermediate</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          PHP
+          <span class="badge bg-warning">Intermediate</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          React Js
+          <span class="badge bg-primary">Beginner</span>
+        </li>
+      </ul>
+    </div>
+
+    <br><br>
+    <h3>Other Skills:</h3>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Managing Source Code with Git
+        <span class="badge bg-warning">Intermediate</span>
+      </li>
+      <br>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Handling Android Studio
+        <span class="badge bg-primary">Beginner</span>
+      </li>
+    </ul>
+
+  </div>
+
+
+  <div id="education">
+    <br><br>
+    <h4 align="center" class="bg-info">My Education:</h4>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">SSC (10th Class)</h5>
+            <p class="card-text">Abhinav Vidya Mandir</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HSC (12th Class)</h5>
+            <p class="card-text">Abhinav Vidya Mandir</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">I.T Engineering</h5>
+            <p class="card-text">Atharva College of Engineering</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="projects">
+    <br><br>
+    <h4 align="center" class="bg-info mt-4000">My Projects:</h4>
+
+
+    <div class="card">
+      <h5 align="center" class="card-header">Bootstrap Website</h5>
+      <div class="card-body">
+        <p class="card-text"></p>
+        <span class="badge rounded-pill bg-info text-dark">Simple Bootstrap Website</span>
+        <a href="https://e-coder.netlify.app/" class="btn btn-outline-primary btn-sm">Check Out..</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="card">
+      <h5 align="center" class="card-header">To-Do list</h5>
+      <div class="card-body">
+        <p class="card-text"></p>
+        <span class="badge rounded-pill bg-info text-dark">Simple React Js Project</span>
+        <a href="https://sskmto-do.netlify.app/" class="btn btn-outline-primary btn-sm">Check Out..</a>
+      </div>
+    </div>
+    <br><br>
+    <div class="card">
+      <h5 align="center" class="card-header">Accordion with React Js</h5>
+      <div class="card-body">
+        <p class="card-text"></p>
+        <span class="badge rounded-pill bg-info text-dark">Simple React Js Project</span>
+        <a href="https://sskm-accordion-reactjs-6700f0.netlify.app/" class="btn btn-outline-primary btn-sm">Check
+          Out..</a>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+
+  <div id="contact">
+    <br><br>
+    <h4 align="center" class="bg-info">Contact Me:</h4>
+
+    <h4 align="center">Languages I Speak: Marathi, Hindi, English</h4>
+    <h4 align="center">Gmail: saurabhmahajan9899@gmail.com</h4>
+    <p align="center">Mobile No:9988776655</p>
+    <br><br>
+
+    <form align="center">
+      <div class="form-group  ">
+        <label align="center" for="exampleInputEmail1">Your Name:</label>
+        <input class=' align-content-between justify-content-evenly' align="center" type="text" class="form-control"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name here" ;>
+
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email Address:</label>
+        <input class=' align-content-between justify-content-evenly' type="email" class="form-control"
+          id="exampleInputPassword1" placeholder="Enter email here">
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example Feedback:</label>
+        <input class=' align-content-between justify-content-evenly' type="email" class="form-control"
+          id="exampleInputPassword1" placeholder="Enter feedback here">
+      </div>
+      <br><br>
+      <button type="submit" class="btn btn-lg btn-primary">SEND</button>
+    </form>
+
+
+
+    <div align="center">
+      <a href="https://github.com/SaurabhMahajan9899" target="_blank">
+        <i class="fab fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/s_s_k_mahajan/" target="_blank">
+        <i class="fab fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/saurabh-mahajan-8419b51a2/" target="_blank">
+        <i class="fab fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p align="center">Copyright &copy; 2022</p>
+  </div>
+
+
+</body>
+
+</html>
